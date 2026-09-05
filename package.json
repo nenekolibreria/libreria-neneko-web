@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "libreria-neneko-web",
+  "description": "Sitio web para Librería Neneko",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "dev": "python3 -m http.server 8000 --directory ."
+  }
+}

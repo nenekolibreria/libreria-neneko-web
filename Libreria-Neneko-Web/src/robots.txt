@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mateoamagnani.github.io/Libreria-Neneko/sitemap.xml

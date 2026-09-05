@@ -1,0 +1,29 @@
+# Dependencias
+node_modules/
+
+# Build / deploy
+dist/
+build/
+.vercel/
+
+# Entorno y secretos — nunca commitear tokens de Meta ni credenciales de n8n
+.env
+.env.*
+!.env.example
+*.pem
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
+*.swp
+
+# Claude Code — configuración local de la máquina, no del proyecto
+.claude/settings.local.json

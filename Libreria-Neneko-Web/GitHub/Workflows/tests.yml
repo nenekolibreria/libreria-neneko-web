@@ -1,0 +1,20 @@
+name: Tests
+
+# Corre en cada push y en cada PR, para cualquier rama.
+# El deploy tiene su propia corrida; esta es la red de seguridad mientras se
+# trabaja en una rama.
+
+on:
+  push:
+    branches-ignore: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
